@@ -18,10 +18,8 @@ python -m pip install numpy pandas statsmodels matplotlib
 ```
 
 The strategy has performed well historically. Below are the returns between 1950 and 2015.
-
 ![Backtest Result](backtest_result_1950_2015.png)
-
-| Metric                     | Strategy (Top-N Term Premium) | Benchmark (US Bonds) |
+| Metric                     | Strategy (Top 3 Term Premium) | Benchmark (US Bonds) |
 |---------------------------|-------------------------------|----------------------|
 | Mean Log Return           | 9.01%                         | 5.53%               |
 | Std Dev (Log Return)      | 7.92%                         | 9.97%               |
