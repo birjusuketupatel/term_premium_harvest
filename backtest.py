@@ -17,7 +17,7 @@ df['bond_excess_return'] = df['bond_tr'] - df['bill_rate']
 # calculate FX adjusted returns
 df['xrusd'] = df.groupby('country')['xrusd'].ffill()
 df['fx_return'] = df.groupby('country')['xrusd'].transform(lambda x: x.shift(1) / x)
-df['bond_excess_return_usd'] = df['bond_excess_return'] * df['fx_return'] * 4
+df['bond_excess_return_usd'] = df['bond_excess_return'] * df['fx_return']
 
 # calculate term premium
 df['term_premium'] = df['bond_rate'] - df['bill_rate']
